@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    background: #000;
+}
+body::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: url("images-login/header-image.png");
+    background-position: center;
+}
+
+nav{
+    position: fixed;
+    z-index: 1;
+    padding: 25px 60px;
+}
+nav a img {
+    width: 160px;
+}
+
+.form-wrapper{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 430px;
+        padding: 60px;
+        border-radius: 4px;
+        background: rgba(0, 0, 0, 0.75);
+        transform: translate( -50%, -50%);
+    }
+
+    .form-wrapper h2{
+        color: #fff;
+        font-size: 2rem;
+    }
+
+.form-wrapper form{
+    margin: 25px 0 65px;
+}
+
+form .form-control{
+height: 50px;
+margin-bottom: 16px;
+position: relative;
+}
+.form-control input{
+    height: 100%;
+    width: 100%;
+    background: #333;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 20px;
+}
+.form-control input:is(:focus, :valid){
+    padding: 16px 20px 0; 
+    background: #444;
+}
+
+.form-control label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    color: #8c8c8c;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1rem;
+    transition: all 0.1s ease;
+}
+
+.form-control input:is(:focus, :valid) ~ label
+{
+    transform: translateY(-130%);
+    font-size: 0.75rem;
+}
+
+form button{
+    width: 100%;
+    padding: 16px 0;
+    background: #e50914;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 25px 0 10px;
+    transition: 0.1s ease;
+}
+
+form button:hover{
+    background: #c40812;
+
+}
+form .form-help{
+    display: flex;
+    justify-content: space-between;
+}
+.form-wrapper :where(label, p, small, a){
+    color: #b3b3b3;
+}
+form .form-help :where(label, a){
+    font-size: 0.9rem;
+}
+form .remember-me input{
+    margin-right: 5px;
+    accent-color: #b3b3b3;
+}
+form .remember-me{
+    display: flex;
+}
+.form-wrapper p a {
+    color: #fff;
+}
+.form-wrapper small{
+    display: block;
+    margin-top: 15px;
+}
+.form-wrapper small a{
+    color: #0071eb;
+}
+.form-wrapper a{
+text-decoration: none;
+
+}
+.form-wrapper a:hover{
+    text-decoration: underline;
+    
+    }
+
+    @media(max-width: 740px){
+        body::before{
+            display: none;
+        }
+        nav, .form-wrapper{
+            padding: 20px;
+        }
+        nav a img{
+            width: 140px;
+        }
+        .form-wrapper{
+                top: 43%;
+                    width: 100%;
+        }
+
+        .form-wrapper form{
+            margin: 25px 0 40px;
+
+        }
+    }
+
+
+
+
+    
+    
+    @media only screen and (max-width: 600px){
+        .logo{
+            width: 100px;
+        }
+        nav button{
+            padding: 5px,10px;
+        }
+        nav .lang{
+            padding: 4px 8px;
+        }
+        .cont{
+            position: unset;
+            transform: none;
+            padding-top: 150px;
+    
+        }
+        .cont h1{
+            font-size: 30px;
+    
+        }
+        .rk1 button{
+            font-size: 12px;
+            padding: 10px 15px; 
+        }
+        .text-col, .img-col{
+            flex-basis: 100%;
+        }
+        .rk2 h2{
+            font-size: 30px;
+        }
+        .rk2 p{
+            font-size: 15px;
+        }
+        .row:nth-child(2), .row:nth-child(4){
+            flex-direction: column-reverse;
+        }
+        .rk2 .row{
+            padding: 10px 0;
+        }
+        .faq h2{
+            font-size: 20px;
+        }
+        .accordion .content{
+            font-size: 14px;
+        }
+        .accordion li label{
+            padding: 10px;
+            font-size: 14px;
+        }
+        label::after{
+            font-size: 22px;
+        }
+    }
+    
