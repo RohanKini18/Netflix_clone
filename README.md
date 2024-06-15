@@ -2,7 +2,7 @@
 Netflix Clone using React JS
 
 ***
-* ### Sign In-
+### Sign In-
 Email: rohankini.rk18@gmail.com 
 Password: Rohan1234
         
