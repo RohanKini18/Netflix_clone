@@ -1,6 +1,6 @@
-# Netflix_clone
+# Netflix clone
 Netflix Clone using React JS
-
+```3rd Sem FEWD Mini-Project```
 ***
 ### Sign In-
 Email: rohankini.rk18@gmail.com 
