@@ -5,12 +5,6 @@
 ### Sign In-
 Email: rohankini.rk18@gmail.com 
 Password: Rohan1234
-        
-        
-***
-#### How to install ReactJs?
-
-``` npx create-react-app@latest app-name ```
 ***
 #### Fetched Data of All the movies from [TMDB](https://www.themoviedb.org/)
     1. Create an account in 
