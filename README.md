@@ -1,5 +1,5 @@
 # Netflix clone
-Netflix Clone using React JS
+
 ```3rd Sem FEWD Mini-Project```
 ***
 ### Sign In-
